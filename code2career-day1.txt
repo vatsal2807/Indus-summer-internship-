@@ -1,0 +1,80 @@
+#include <stdio.h>
+
+int main() {
+   int m1,m2,m3,m4,m5;
+   printf("Enter marks of 5 subjects:");
+   scanf("%d",&m1);
+   scanf("%d",&m2);
+   scanf("%d",&m3);
+   scanf("%d",&m4);
+   scanf("%d",&m5);
+   
+   //int pen = 0;
+   if(m1<18 || m2<18 || m3<18 || m4<18 || m5<18)
+   {
+       static int pen = 0;
+      // printf("fail");
+       if(m1<18)
+       {
+           printf("You have failed in 1st subject");
+           pen = pen + 500;
+           printf("Total penalty : %d", pen);
+       }
+      else  if(m2<18)
+       {
+           printf("You have failed in 2nd subject");
+           pen = pen + 500;
+           printf("Total penalty : %d", pen);
+       }
+       else if(m3<18)
+       {
+           printf("You have failed in 3rd subject");
+           pen = pen + 500;
+           printf("Total penalty : %d", pen);
+       }
+       else if(m4<18)
+       {
+           printf("You have failed in 4th subject");
+           pen = pen + 500;
+           printf("Total penalty : %d", pen);
+       }
+      else if(m5<18)
+       {
+           printf("You have failed in 5th subject");
+           pen = pen + 500;
+           printf("Total penalty : %d", pen);
+       }
+       else{
+               printf("FAILED");
+           }
+   }
+  
+   else{
+   double sum = m1+m2+m3+m4+m5;
+   int avg = (m1+m2+m3+m4+m5)/5;
+   double percentage = (sum/500)*100;
+   printf("\navg of marks : %d", avg);
+   printf("\nSum of marks : %f", sum);
+   printf("\nPercentage : %f", percentage);
+   if(percentage>80 && percentage<100)
+   {
+       printf("GRADE A");
+   }
+   else if(60<=percentage<=80)
+   {
+       printf("GRADE B");
+   }
+   else if(40<=percentage<=60)
+   {
+       printf("GRADE C");
+   }
+   else
+   {
+       printf("GRADE : Pass");
+   }
+   }
+   //sum,percentage,avg, grade
+   //if marks are less than 18 show fail 80
+  
+    return 0;
+}
