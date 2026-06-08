@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function popup1(){
+            alert("WELCOME TO JavaScript")
+        }
+        function popup2(){
+            var a = confirm("Are you sure????????!!!!!!!!")
+            if(a==true){
+                alert("Record deleted")
+            }
+        }
+        function popup3(){
+            var a = prompt("ENTER NO1.")
+            var b = prompt("ENTER NO2.")
+            var c =parseInt(a)+parseInt(b)
+            alert("sum is "+c)
+        }
+    </script>
+</head>
+<body>
+    <input type ="button"onclick =  "popup1()" value="Button 1"/>
+    <input type ="button"onclick =  "popup2()" value="Button 2"/>
+
+    <input type ="button"onclick =  "popup3()" value="Button 3"/>
+
+</body>
+</html>

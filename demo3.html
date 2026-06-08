@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <script>
+        var myarr=["C","CPP",20,50,80]
+        for(var i=0;i<myarr.length;i++)
+    {
+        document.write("<br/>value is" + myarr[i])
+    }
+    for(i in myarr)
+    {
+        document.write("<br/>value is"+myarr[i])
+    }
+    myarr.forEach((value,index, arr)=>
+    {
+        document.write("<br/> value is"+value+"<br/>Index" + index + "<br/>Array :  " + arr[0])
+    })
+    
+
+    
+
+
+    </script>
+</head>
+</html>
